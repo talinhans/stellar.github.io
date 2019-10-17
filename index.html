@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STELLAR</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jq.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			var s = $(window).scrollTop();
+			//if(s > 100){
+			//	$('.bg2').addClass('active')
+			//}
+			if (s > $('.bg3').offset().top) {
+				$('.txt').addClass('txt--active')
+			}
+			if (s > 850) {
+				$('.act').addClass('show')
+			}
+			if(s > $('.line').offset().top-200){
+				$('.line').addClass('line--ac')
+				$('.l2').addClass('l2--ac')
+				$('.l4').addClass('l4--ac')
+				$('.l5').addClass('l5--ac')
+				$('.l3').addClass('l3--ac')
+
+			}
+			//var yx=s*.07;
+			//var yy=s*.04;
+			//if(s > 100){
+			//$('.img1').css({
+			//'transform': 'scaleX('+(1.5+yx)+') scaleY('+(1+yy)+')'
+			//});
+
+			//}
+		})
+
+			setInterval(function(){
+				$('.up').addClass('stellar--active')
+			}, 1000);
+
+			$('.bar1').click(function(){
+				$('.slide2').removeClass('slide_ac');
+
+				$('.slide1').addClass('slide_ac')
+				$('.bar1').addClass('bar--ac')
+				$('.bar2').removeClass('bar--ac')
+
+			})
+			$('.bar2').click(function(){
+				$('.slide1').addClass('slide--active');
+
+				$('.slide2').addClass('slide_ac')
+				$('.bar2').addClass('bar--ac')
+				$('.bar1').removeClass('bar--ac')
+
+			})
+
+			$('.z1').click(function(){
+				$('body').animate({scrollTop:$('.bg1').offset().top}, 1000)
+			})
+
+			$('.z2').click(function(){
+				$('body').animate({scrollTop:$('.bg2').offset().top}, 1000)
+			})
+
+			$('.z3').click(function(){
+				$('body').animate({scrollTop:$('.bg3').offset().top}, 1000)
+			})
+
+			$('.z4').click(function(){
+				$('body').animate({scrollTop:$('.bg4').offset().top}, 1000)
+			})
+
+			$('.z5').click(function(){
+				$('body').animate({scrollTop:$('.bg5').offset().top}, 1000)
+			})
+
+			$('.z6').click(function(){
+				$('body').animate({scrollTop:$('.bg6').offset().top}, 1000)
+			})
+
+			$('.z7').click(function(){
+				$('body').animate({scrollTop:$('.bg7').offset().top}, 1000)
+			})
+
+			$('.z8').click(function(){
+				$('body').animate({scrollTop:$('.bg8').offset().top}, 1000)
+			})
+
+			$('.z9').click(function(){
+				$('body').animate({scrollTop:$('.bg9').offset().top}, 1000)
+			})
+
+
+			$('.c1').click(function(){
+				$('.i73').hide()
+				$('.i71').show()
+				$('.i72').hide()
+			})
+			$('.c2').click(function(){
+				$('.i72').show()
+				$('.i73').hide()
+				$('.i71').hide()
+
+			})
+			$('.c3').click(function(){
+				$('.i73').show()
+				$('.i71').hide()
+				$('.i72').hide()
+			})
+			$('.z1').hover(function(){
+				$('.zt1').toggleClass('z--ac')
+			})
+			$('.z2').hover(function(){
+				$('.zt2').toggleClass('z--ac')
+			})
+			$('.z3').hover(function(){
+				$('.zt3').toggleClass('z--ac')
+			})
+			$('.z4').hover(function(){
+				$('.zt4').toggleClass('z--ac')
+			})
+			$('.z5').hover(function(){
+				$('.zt5').toggleClass('z--ac')
+			})
+			$('.z6').hover(function(){
+				$('.zt6').toggleClass('z--ac')
+			})
+			$('.z7').hover(function(){
+				$('.zt7').toggleClass('z--ac')
+			})
+			$('.z8').hover(function(){
+				$('.zt8').toggleClass('z--ac')
+			})
+			$('.z9').hover(function(){
+				$('.zt9').toggleClass('z--ac')
+			})
+
+
+			//setInterval(function(){
+			//	$('.slide2').removeClass('slide_ac');
+			//
+			//	$('.slide1').addClass('slide_ac')
+			//}, 2000)
+			//setInterval(function(){
+			//	$('.slide1').addClass('slide--active');
+			//
+			//	$('.slide2').addClass('slide_ac')
+			//}, 6000)
+
+
+			//setInterval(function(){
+				//$('.img1').addClass('img--active')
+			//}, 1100);
+
+
+
+
+	})
+</script>
+
+<body>
+<div class="navs">
+<div class="ztext zt1">HOME</div>
+	<div class="z z1"></div>
+	<div class="ztext zt2">VISION</div>
+	<div class="z z2"></div>
+	<div class="ztext zt3">MAKING</div>
+	<div class="z z3"></div>
+	<div class="ztext zt4">UI</div>
+	<div class="z z4"></div>
+	<div class="ztext zt5">MAGNET</div>
+	<div class="z z5"></div>
+	<div class="ztext zt6">DISPLAY</div>
+	<div class="z z6"></div>
+	<div class="ztext zt7">BODY</div>
+	<div class="z z7"></div>
+	<div class="ztext zt8">COLORS</div>
+	<div class="z z8"></div>
+	<div class="ztext zt9">BUY</div>
+	<div class="z z9"></div>
+</div>
+<div class="bg1">
+<div class="logo"></div>
+	<div class="stellar">
+	<!--<div class="layer"></div>-->
+	<!--<div class="up">STELLAR</div>-->
+		<!--<div class="lol s">S</div>
+		<div class="lol t">T</div>
+		<div class="lol e">E</div>
+		<div class="lol l">L</div>
+		<div class="lol l">L</div>
+		<div class="lol a">A</div>
+		<div class="lol r">R</div>-->
+	</div>
+	<div class="this"><b>Stellar</b><br>
+
+	</div>
+	<div class="img1"></div>
+</div>
+<div class="bg2">
+<div class="header hh">About Me</div><br>
+<div class="line"></div><br><br>
+<div class="t">Stellar is the new remodeled, resdesigned, and energized answer to the design of Modular Phones. It builds on Google's Project Ara and solves each problem it faced. It is aimed to create the <b><i>phone of the future.</i></b></div><br><br>
+<div class="imgs">
+	<div class="b wire"></div>
+	<div class="b act"></div>
+</div>
+</div>
+<div class="bg3">
+<div class="header h2"><b>The Making</b></div><br><div class="line l2 l3"></div>
+
+
+	<div class="showimg">
+		<div class="txt text1 item_img1"></div><br><br><br><br>
+
+				<div class="txt text2 item_img2"></div><br><br>
+		<div class="txt text3 item_img3"></div><br><br>
+
+
+	</div>
+	<div class="text">
+<br><br>
+		<div class="txt text1">A Beautiful Modular Display</div><br><br><br><br>
+		<div class="txt text2">Strong Aluminium Build</div><br><br><br><br>
+		<div class="txt text3">Power Magnetic Grid to hold and power modules</div><br><br><br><br>
+
+	</div>
+</div>
+
+
+<div class="bg5 bg">
+<div class="header h2"><b>Electromagnet Technology<b></div><br><div class="line l2"></div>
+<br>
+<div class="header h5">New, Powerul, Strong Magnetic Technology to connect and power module. <br><br>
+Now connect <b>any module, any time</b>.<br><br>
+	</div><br><br><br>
+<div>
+
+</div>
+<br><br><br>
+
+<div class="img2"></div>
+</div>
+<div class="bg6 bg">
+<div class="header h2"><b>Beautiful Display<b></div><br><div class="line l2 l3"></div>
+<div class="header h6">A Beautiful, Colorful 4K Display comes is built in.<br><br>
+	<div class="icon"></div></div><br>
+<div>
+
+</div>
+<br><br><br>
+
+<div class="img3"></div>
+</div>
+
+<div class="bg4 bg">
+<div class="header h2"><b>Elegant User Interface<b></div><br>
+<div class="line l2"></div>
+<br>
+<div class="t tb">Clean, Simple UI: <br>Built <i><b>for the people</b></i>.</div><br><br>
+<div class="t tb2">Easy to use, simple application to manage modules</div>
+	<div class="ui">
+	<img src="STELLAR.png">
+		<div class="many">
+		<div class="bars">
+			<div class="bar bar1"></div>
+			<div class="bar bar2"></div>
+		</div>
+			<div class="slide slide1"></div>
+			<div class="slide slide2"></div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="bg bg8">
+	<div class="header h9"><b>Elegant Colors</b>
+	<br><div class="line l2 l4"></div>
+	<br>
+	<div class="cs">
+		<div class="c c1"></div>
+		<div class="c c2"></div>
+		<div class="c c3"></div>
+	</div>
+	</div>
+	 <div class="img7 i71"></div>
+	<div class="img7 i72"></div>
+	<div class="img7 i73"></div>
+</div>
+
+
+<div class="bg bg7">
+<div class="header h2"><b>Modular Reality<b></div><br><div class="line l2"></div>
+	<div class="fixed mob">
+<div class="header h1">Now connect any module you can think. No matter the shape or size.</div><br><br>
+	<div class="inner"></div>
+<div class="header hl">Stellar gives your modular a reality. The posibilities are now infinite.</div><br><br>
+
+</div>
+</div>
+
+
+<div class="bg bg9">
+
+
+	<div class="img_b"></div>
+</div>
+
+</body>
+</html>
